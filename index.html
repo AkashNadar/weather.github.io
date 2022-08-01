@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body class="bg-[#2C3333]">
+    <div
+      id="weatherCard"
+      class="mt-[150px] mx-auto w-1/2 h-80 text-2xl bg-[#395B64] rounded-[20px] text-[#A5C9CA]"
+    >
+      <div class="p-5 text-center">
+        <input id="inputLoc" type="text" name="location value="" class="h-12
+        mr-5 rounded-full text-[#2C3333] text-center">
+        <input
+          type="button"
+          value="search"
+          id="getWeather"
+          class="bg-[#2C3333] w-[130px] h-12 rounded-lg"
+        />
+      </div>
+
+      <div class="">
+        <div class="flex-col justify-center text-center">
+          <h2 id="loc">Weather in Mumbai</h2>
+          <h1 id="temp" class="my-2">temp</h1>
+          <img id="weathImg" src="" alt="weatherImage" class="mx-auto" />
+
+          <div class="flex justify-evenly text-lg mt-5">
+            <!-- <table class="">
+              <tr>
+                <td class="p-auto"><p id="desc">cloudy</p></td>
+                <td><p id="humid">humidity</p></td>
+                <td><p id="wind">Wind Speed</p></td>
+              </tr>
+            </table> -->
+            <p id="desc">cloudy</p>
+            <p id="humid">humidity</p>
+            <p id="wind">Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+</html>
