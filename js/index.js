@@ -1,3 +1,5 @@
+import {apiData} from './const.js';
+
 // OpenWeather Api
 
 var loc = document.getElementById("loc");
@@ -9,7 +11,7 @@ var wind = document.getElementById("wind");
 var imgSrc = document.getElementById("weathImg");
 
 var weatherApi = (location) => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=7f97da1820f236e1987e1cadcfa9cc1c&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiData.key}&units=metric`)
     .then((res) => res.json())
     .then((data) => {
 
